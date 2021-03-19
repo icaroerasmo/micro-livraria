@@ -36,7 +36,8 @@ function newBook(book) {
 }
 
 function calculateShipping(id, cep) {
-    fetch('http://localhost:3000/shipping/' + cep)
+    let domain = `http://${window.location.hostname}:3000`
+    fetch(`${domain}/shipping/` + cep)
         .then((data) => {
             if (data.ok) {
                 return data.json();
@@ -53,9 +54,12 @@ function calculateShipping(id, cep) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    
+    let domain = `http://${window.location.hostname}:3000`
+    
     const books = document.querySelector('.books');
 
-    fetch('http://localhost:3000/products')
+    fetch(`${domain}/products`)
         .then((data) => {
             if (data.ok) {
                 return data.json();
