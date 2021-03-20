@@ -16,8 +16,8 @@ Esta é a página principal.
 
 ```
 fill-field 'div.column:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)' '40720270';
-speak 'Calculando frete'
 click 'div.column:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:nth-child(1)'
+speak 'Calculando frete'
 screenshot "Cálculo do frete"
 ```
 Esta é a tela de confirmação do valor do frete.
