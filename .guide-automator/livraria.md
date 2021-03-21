@@ -8,7 +8,7 @@
 
 ```
 viewport 1365 982
-go-to-page http://localhost:5000
+go-to-page http://127.0.0.1:5000
 speak 'Página principal'
 screenshot "Página principal"
 ```
