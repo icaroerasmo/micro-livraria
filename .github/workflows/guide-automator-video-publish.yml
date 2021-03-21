@@ -42,12 +42,23 @@ jobs:
           
           # Runs guide automator
           docker run --rm -v $(pwd)/output:/usr/src/output -v $(pwd)/.guide-automator:/usr/src/guide-automator icaroerasmo/guide-automator-puppeteer -d -i /usr/src/guide-automator/livraria.md -cv /usr/src/guide-automator/cover.html -o /usr/src/output
+      
       - name: Upload video
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: output/video.mp4
           asset_name: video.mp4
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: "Micro livraria video"
+      
+      - name: Upload pdf
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: output/output.pdf
+          asset_name: output.pdf
           tag: ${{ github.ref }}
           overwrite: true
           body: "Micro livraria video"
