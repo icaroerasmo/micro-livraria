@@ -4,7 +4,7 @@ on:
   push:
     # Publish `master` as Docker `latest` image.
     branches:
-      - feature/guide-automator-integration
+      - master
 
     # Publish `v1.2.3` tags as releases.
     tags:
@@ -47,7 +47,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: output/video.mp4
-          asset_name: mything
+          asset_name: video.mp4
           tag: ${{ github.ref }}
           overwrite: true
           body: "Micro livraria video"
