@@ -29,7 +29,7 @@ jobs:
       - name: run micro-livraria
         run: |
           docker build -t micro-livraria .
-          docker run --rm -p 5000:5000 -p 3000:3000 micro-livraria
+          docker run -d --rm -p 5000:5000 -p 3000:3000 micro-livraria
 
       - name: Push image
         run: |
