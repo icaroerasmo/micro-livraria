@@ -15,7 +15,7 @@ screenshot "Página principal"
 Esta é a página principal.
 
 ```
-speak 'Para calcular o frete, digite o seu CPF no campo de texto e clique no botão "Calcular Frete"'
+speak 'Para calcular o frete, digite o seu CEP no campo de texto e clique no botão "Calcular Frete"'
 fill-field 'div.column:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)' '40720270';
 click 'div.column:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:nth-child(1)'
 screenshot "Cálculo do frete"
