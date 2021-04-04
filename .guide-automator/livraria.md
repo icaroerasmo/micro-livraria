@@ -29,4 +29,4 @@ click 'div.column:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-c
 speak 'Compra finalizada'
 screenshot "Compra finalizada"
 ```
-Esta é a tela de confirmação de Compra.
+Esta é a tela de confirmação da Compra.
