@@ -363,4 +363,3 @@ Se quiser estudar um segundo sistema de demonstração de microsserviços, suger
 ## Créditos
 
 Este exercício prático, incluindo o seu código, foi elaborado por **Rodrigo Brito**, aluno de mestrado do DCC/UFMG, como parte das suas atividades na disciplina Estágio em Docência, cursada em 2020/2, sob orientação do **Prof. Marco Tulio Valente**.
-
